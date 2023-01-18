@@ -1,0 +1,30 @@
+@import "./const.css";
+
+/* : ===== COMPONENTS ===== */
+@import "../components/Navbar/navbar.styles.css";
+@import "../components/Footer/footer.styles.css";
+
+/* => Sliders */
+@import "../components/Sliders/SliderImage/slider-image.styles.css";
+@import "../components/Sliders/SliderBrands/slider-brands.styles.css";
+@import "../components/Sliders/SliderContent/slider-content.styles.css";
+
+/* => Loaders */
+@import "../components/Loaders/loaders.styles.css";
+
+/* : ===== LAYOUTS ===== */
+/* => Modal */
+@import "../layouts/BasicModal/BasicModal.styles.css";
+
+/* => Video */
+@import "../layouts/VideoLayout/video-layout.styles.css";
+
+/* : ===== SCREENS ===== */
+/* => Home */
+@import "../screens/Home/home.styles.css";
+
+/* => AboutUs */
+@import "../screens/AboutUs/about-us.styles.css";
+
+/* => Account */
+@import "../screens/Account/account.styles.css"

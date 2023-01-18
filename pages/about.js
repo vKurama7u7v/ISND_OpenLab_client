@@ -1,12 +1,12 @@
 import React from "react";
 import BasicLayout from "../layouts/BasicLayout";
-import Home from "../screens/Home";
+import AboutUs from "../screens/AboutUs";
 
 export default function Index() {
   return (
     <>
       <BasicLayout>
-        <Home />
+        <AboutUs />
       </BasicLayout>
     </>
   );

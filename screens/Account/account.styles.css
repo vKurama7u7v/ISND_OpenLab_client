@@ -1,0 +1,272 @@
+main.account section.account .content {
+    padding: 2em;
+    background: var(--bg-content-1);
+}
+
+.base-form.container {
+    padding-bottom: 2em;
+}
+
+.base-form.container:nth-last-of-type(1) {
+    padding-bottom: 0;
+}
+
+
+.base-form.container .container-form .form__column {
+    gap: 1.5em;
+}
+
+.base-form.container .container-form .form__div {
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.base-form.container .container-form .form__div:nth-last-of-type(1) {
+    margin-bottom: 0rem;
+}
+
+.base-form.container .form__input {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #7d7d7d;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: inherit;
+    color: #b9b9b9;
+    outline: none;
+    background: none;
+    padding: 1.25rem;
+    padding-right: 2.5rem;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+}
+
+.base-form.container .form__input:disabled,
+.base-form.container .form__input:disabled:hover {
+    border: 2px solid #7d7d7d;
+    cursor: not-allowed;
+}
+
+.base-form.container .form__input:hover {
+    border-color: rgba(214, 214, 214, 0.72);
+}
+
+.base-form.container .form__input:focus {
+    border-color: var(--primary);
+    color: #dbdbdb;
+}
+
+
+.base-form.container .container-form .form__label {
+    position: absolute;
+    z-index: 1;
+    left: .25em;
+    top: 0.8rem;
+    padding: 0 0.5rem;
+    background: var(--bg-content-1);
+    color: #7d7d7d;
+    cursor: text;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+}
+
+.base-form.container .form__input:invalid {
+    border-color: #d81159;
+}
+
+.base-form.container .form__input:focus~.form__label {
+    top: -7px;
+    left: 1em;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--primary);
+    background: var(--bg-content-1);
+    z-index: 2;
+}
+
+
+.base-form.container .form__input:not(:placeholder-shown).form__input:not(:focus)~.form__label {
+    top: -7px;
+    left: 1em;
+    color: #7d7d7d;
+    background: var(--bg-content-1);
+    font-size: 0.8rem;
+    font-weight: 500;
+    z-index: 2;
+}
+
+.base-form.container .form__input:invalid~.form__label {
+    color: #d81159;
+}
+
+.base-form.container .footer-popup {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.base-form.container .footer-popup .btn-wrap {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.base-form.container .footer-popup .btn-wrap:nth-last-of-type(1) {
+    justify-content: flex-end;
+}
+
+.base-form.container button {
+    font-family: var(--Font-Rubik);
+    font-weight: 400;
+    padding: 12px 20px;
+    outline: none;
+    border: none;
+    background: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+
+    display: flex;
+    align-items: center;
+    gap: .25em;
+}
+
+.base-form.container button.btn-primary {
+    background: var(--title-color);
+    color: #fff;
+    transition: all 0.25s ease-in-out;
+}
+
+.base-form.container button.btn-primary:hover {
+    background: var(--primary);
+    box-shadow: 0px 0px 5px var(--secondary);
+}
+
+.base-form.container button.btn-secondary {
+    border: 1px solid #555555;
+    color: #fff;
+}
+
+.base-form.container button.btn-secondary:hover {
+    background: #555555;
+    color: #fff;
+}
+
+.base-form.container button .loader {
+    height: 18px;
+}
+
+.base-form.container button .loader .borders {
+    width: 18px;
+    height: 18px;
+}
+
+.base-form.container button .loader .borders:before,
+.base-form.container button .loader .borders:after {
+    border: 2px solid #fff;
+}
+
+.base-form.container button .loader .borders:before {
+    width: 10.8px;
+    height: 10.8px;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+
+.base-form.container button .loader .borders:after {
+    width: 15px;
+    height: 15px;
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
+
+main.account section.account .list-options {
+    display: flex;
+}
+
+main.account section.account .list-options button {
+    padding: 8px 15px;
+    background: var(--gray);
+    font-family: var(--Font-Raleway);
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text-color);
+    letter-spacing: .1px;
+
+    display: flex;
+    align-items: center;
+    gap: .25em;
+}
+
+main.account section.account .list-options button i {
+    font-size: 18px;
+}
+
+main.account section.account .list-options button:hover,
+main.account section.account .list-options button.active {
+    background: var(--primary);
+    color: #212121;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 700px) {
+    .base-form.container .footer-popup {
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .base-form.container .footer-popup .btn-wrap {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        order: 2;
+    }
+
+    .base-form.container .footer-popup .btn-wrap:nth-last-of-type(1) {
+        order: 1;
+        flex-direction: column;
+    }
+
+    .base-form.container .footer-popup .btn-wrap:nth-of-type(1) .social {
+        max-width: 3em;
+    }
+
+    .base-form.container .footer-popup .btn-wrap button {
+        width: 250px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .base-form.container .container-form .form__column {
+        display: block;
+        padding-bottom: 1em;
+    }
+
+    .base-form.container .container-form .form__div {
+        margin-bottom: 1em;
+    }
+
+    .base-form.container .container-form .form__input {
+        font-size: 14px;
+    }
+
+    .base-form.container .container-form .form__label {
+        font-size: 14px
+    }
+
+    main.account section.account .list-options button {
+        padding: 1em 1.5em;
+    }
+
+    main.account section.account .list-options button i {
+        font-size: 22px;
+    }
+
+    main.account section.account .list-options button span {
+        display: none;
+    }
+}

@@ -1,0 +1,26 @@
+section.about-s1 .wrapper {
+    gap: 2em;
+}
+
+section.about-s1 .wrapper .content {
+    padding-top: 1em;
+    display: grid;
+    gap: 1em;
+}
+
+section.about-s1 .wrapper .content p.paragraph {
+    font-family: var(--Font-Poppins);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 187%;
+    letter-spacing: 0.025em;
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 1000px) {
+    section.about-s1 .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
